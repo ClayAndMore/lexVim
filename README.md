@@ -33,12 +33,19 @@
 > * 本 Vim 可以重复安装
 > * 普通用户执行程序时需要有sudo权限
 
-```
-#git clone https://github.com/lexkong/lexVim.git
-#chmod 777 -R Vim
-#cd Vim
-#./start_vim.sh
-```
+下载 Vim 配置工具
+$ git clone https://github.com/lexkong/lexVim
+进入 lexVim 目录，下载 go ide 需要的二进制文件：
+#chmod 777 -R lexVim
+$ cd lexVim
+$ git clone https://github.com/lexkong/vim-go-ide-bin
+都是二进制文件，大概有 141MB，请耐心等待 :-)
+
+启动安装脚本：
+$ ./start_vim.sh
+启动后，会进入一个交互环境，依次输入： 1 -> yourname -> youremail@qq.com，脚本最后输出 this vim config is success !说明安装成功。很简单，只需 3 个选择即可安装成功，配置 IDE so easy。
+
+
 **部署中问题**
 
 使用git clone失败
